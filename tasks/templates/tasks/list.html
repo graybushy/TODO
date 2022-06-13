@@ -10,7 +10,7 @@
 </form>
 
 {% for task in tasks %}
-    <div class="card bg-primary">
+    <div class="card bg-warning" style="width: 50%">
         <div class="card-body">
             <a class="btn btn-warning btn-sm" href="{% url 'update_task' task.id %}">Update</a>
             <a class="btn btn-danger btn-sm" href="{% url 'delete' task.id %}">Delete</a>
